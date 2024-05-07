@@ -1,0 +1,1 @@
+export { useGetArticles } from './useGetArticles';
