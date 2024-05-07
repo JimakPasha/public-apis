@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { HomePage, BlogItemPage, ErrorPage } from "../../pages";
+
+import { HomePage, BlogItemPage, ArticlesPage, ErrorPage } from "../../pages";
 import { Layout } from "../layout";
 
 export const AppRouter = () => {
@@ -11,6 +12,7 @@ export const AppRouter = () => {
       children: [
         { path: "/", element: <HomePage /> },
         { path: "/:id", element: <BlogItemPage /> },
+        { path: "/articles", element: <ArticlesPage /> },
       ],
     },
     {

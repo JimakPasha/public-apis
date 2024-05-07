@@ -6,9 +6,10 @@ import {
   ListItem,
   Typography,
 } from "@mui/material";
+import { Link } from "react-router-dom";
+
 import { IBlog } from "../../../entities";
 import { formatDate } from "../../../shared/lib";
-import { Link } from "react-router-dom";
 
 interface IListProps {
   list: IBlog[];

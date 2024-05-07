@@ -1,7 +1,9 @@
 import { Pagination, Paper } from "@mui/material";
+
+import { ErrorMessage, Loader } from "../../shared/ui";
 import { useGetBlogList } from "./hooks";
 import { List } from "./ui";
-import { ErrorMessage, Loader } from "../../shared/ui";
+
 
 export const BlogList = () => {
   const { list, isLoading, isError, page, totalPages, handleChangePage } =

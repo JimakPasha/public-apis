@@ -1,8 +1,8 @@
 import { Typography } from "@mui/material";
 
-import { BlogList } from "../feature";
+import { ArticlesBoard } from "../feature";
 
-export const HomePage = () => (
+export const ArticlesPage = () => (
   <div>
     <Typography
       variant="h2"
@@ -12,8 +12,8 @@ export const HomePage = () => (
         textTransform: "uppercase",
       }}
     >
-      Blog
+      Articles
     </Typography>
-    <BlogList />
+    <ArticlesBoard />
   </div>
 );

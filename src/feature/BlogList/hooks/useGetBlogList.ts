@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
+
+import { LIMIT_BOG } from "../../../entities/blog/constants";
 import { IBlog, getBlogList } from "../../../entities";
-import { LIMIT } from "../../../entities/blog/constants";
 
 export const useGetBlogList = () => {
     const [list, setList] = useState<IBlog[]>([]);
@@ -17,7 +18,7 @@ export const useGetBlogList = () => {
         getBlogList({ page })
             .then((data) => {
                 setList(data.results);
-                const newTotalPages = Math.ceil(data.count / LIMIT)
+                const newTotalPages = Math.ceil(data.count / LIMIT_BOG)
                 setTotalPages(newTotalPages);
             })
             .catch(() => setIsError(true))

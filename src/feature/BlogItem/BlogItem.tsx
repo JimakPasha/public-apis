@@ -1,8 +1,9 @@
 import { useParams } from "react-router-dom";
-import { useGetBlogItem } from "./hooks";
 import { Card, CardContent, Typography } from "@mui/material";
+
 import { ErrorMessage, Loader } from "../../shared/ui";
 import { formatDate } from "../../shared/lib";
+import { useGetBlogItem } from "./hooks";
 
 export const BlogItem = () => {
   const { id } = useParams();

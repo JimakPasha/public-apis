@@ -1,3 +1,3 @@
-import { BlogItem } from "../feature/BlogItem";
+import { BlogItem } from "../feature";
 
 export const BlogItemPage = () => <BlogItem />;
