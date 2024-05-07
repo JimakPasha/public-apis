@@ -17,9 +17,8 @@ There is also a page for articles, which displays top featured/has event/has lau
 https://api.spaceflightnewsapi.net/v4/docs/
 
 ## How to open an application locally 
-
-```
 Node.js and Git should be installed on your computer
+```
 git clone https://github.com/JimakPasha/space-flight-news.git
 npm install
 npm run dev
